@@ -1,0 +1,79 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    text-align: center;
+
+}
+
+a {
+    color: white;
+}
+
+h2 {
+    color: #FFFFFFB8;
+    font-family: "Montserrat", Sans-serif;
+    font-size: 3rem;
+    font-weight: 700;
+}
+
+.brownie-font {
+    font-family: 'Lie to Me', sans-serif;
+    color: #ffffff;
+    font-weight: 300;
+
+}
+
+.brownie-color {
+    color: #f3c331;
+}
+
+
+.top-container {
+    background-image: url(https://brashbrownie.com/wp-content/uploads/2023/04/cashew-chocolate-brownies-in-calicut.webp);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+    color: white;
+}
+
+.top-container img {
+    width: 100px;
+}
+
+/* toggle */
+.custom-toggler .navbar-toggler-icon {
+    background-image: url(/img/menu.png);
+
+}
+
+.custom-toggler.navbar-toggler {
+    border: none;
+}
+
+.align,
+.img-logo {
+    text-align: center;
+}
+
+.img-section {
+    display: flex;
+    flex-direction: column;
+}
+
+@media screen and (max-width: 765px) {
+    .big-screen {
+        visibility: hidden;
+    }
+
+
+}
+
+@media screen and (min-width: 766px) {
+    .mobile-view {
+        visibility: hidden;
+    }
+}
