@@ -1,5 +1,7 @@
 * {
     box-sizing: border-box;
+    padding: 0;
+    margin: 0;
 }
 
 body {
@@ -14,7 +16,7 @@ a {
 h2 {
     color: #FFFFFFB8;
     font-family: "Montserrat", Sans-serif;
-    font-size: 3rem;
+    font-size: 2rem;
     font-weight: 700;
 }
 
@@ -29,6 +31,9 @@ h2 {
     color: #f3c331;
 }
 
+.nav-link {
+    font-family: "Montserrat", Sans-serif;
+}
 
 .top-container {
     background-image: url(https://brashbrownie.com/wp-content/uploads/2023/04/cashew-chocolate-brownies-in-calicut.webp);
@@ -64,11 +69,11 @@ h2 {
     flex-direction: column;
 }
 
+
 @media screen and (max-width: 765px) {
     .big-screen {
         visibility: hidden;
     }
-
 
 }
 
