@@ -1,84 +1,235 @@
-* {
-    box-sizing: border-box;
-    padding: 0;
-    margin: 0;
+@font-face {
+    font-family: 'CustomFont';
+    src: url(/Fonts/lie-to-me-webfont.woff) format('woff');
+    src: url(/Fonts/lie-to-me-webfont.woff2) format('woff2');
+    src: url(/Fonts/lie-to-me-otf-webfont.woff) format('woff');
+    src: url(/Fonts/lie-to-me-otf-webfont.woff2) format('woff2');
+    font-weight: normal;
+    font-style: normal;
 }
 
-body {
-    text-align: center;
 
+
+html{
+    font-size: 62.5%;
 }
 
-a {
-    color: white;
-}
-
-h2 {
-    color: #FFFFFFB8;
-    font-family: "Montserrat", Sans-serif;
+body{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: normal;
+    line-height: 1.5;
     font-size: 2rem;
-    font-weight: 700;
+    
 }
 
-.brownie-font {
-    font-family: 'Lie to Me', sans-serif;
-    color: #ffffff;
-    font-weight: 300;
-
+h3{
+    display: block;
 }
 
-.brownie-color {
-    color: #f3c331;
-}
 
-.nav-link {
-    font-family: "Montserrat", Sans-serif;
-}
-
-.top-container {
-    background-image: url(https://brashbrownie.com/wp-content/uploads/2023/04/cashew-chocolate-brownies-in-calicut.webp);
-    background-position: center;
-    background-repeat: no-repeat;
+.top-container{
+    background: url(https://brashbrownie.com/wp-content/uploads/2023/04/cashew-chocolate-brownies-in-calicut.webp) no-repeat;
     background-size: cover;
-    width: 100%;
     height: 100vh;
-    color: white;
+    width: 100%;
 }
 
-.top-container img {
-    width: 100px;
+.nav-link{
+    font-weight: 400;
+    color: #fff;
+    font-size: 1.6rem;
+    padding-top: 1.5rem;
 }
 
-/* toggle */
-.custom-toggler .navbar-toggler-icon {
-    background-image: url(/img/menu.png);
-
+.nav-item{
+    padding: 1rem 2.5rem;
 }
 
-.custom-toggler.navbar-toggler {
-    border: none;
-}
-
-.align,
-.img-logo {
-    text-align: center;
-}
-
-.img-section {
+.content{
+    color: #fff;
     display: flex;
     flex-direction: column;
+    text-align: center;
+    justify-content: space-around;
+    align-items: center;
+    align-content: center;
+    height: 550px;
+    position: relative;
+    
+   
 }
 
+.content-heading{
+    color: #FFFFFFB8;
+    font-size: 5.5rem;
+    font-weight: 700;
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+   
+   
+}
 
-@media screen and (max-width: 765px) {
-    .big-screen {
-        visibility: hidden;
+.content--heading{
+    font-family: 'CustomFont', sans-serif;
+    color: #fff;
+    font-size: 4.8rem;
+    font-weight: 300;
+    margin: 0;
+    position: absolute;
+    top: 80px;
+
+}
+
+.content--text{
+    inline-size: 40rem;
+    font-size: 2.4rem;
+    font-weight: 400;
+    line-height: 1;
+}
+
+.styled--brownies{
+    font-family: 'CustomFont';
+    color: #f3c331;
+    font-size: 3.5rem;
+}
+
+.button {
+    display: inline-block;
+    padding: 10px 40px;
+    background-color: transparent;
+    border: 3px solid #FB8B24;
+    color: #fff;
+    text-align: center;
+    text-decoration: none;
+    font-size: 1.6rem;
+    font-weight: 600;
+    cursor: pointer;
+    border-radius: 25px; /* Adjust the value to make the border more or less oval */
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  
+  .button:hover {
+    border: 3px solid #FB8B24;
+    color: #b7b3b3;
+  }
+  
+
+
+@media screen and (max-width: 395px){
+    .content--text{
+        inline-size: 280px;
+        font-size: 2rem;
+    }
+}
+
+@media (max-width: 991px) {
+   
+
+    .container{
+        max-width: 980px;
     }
 
-}
-
-@media screen and (min-width: 766px) {
-    .mobile-view {
-        visibility: hidden;
+    .navbar-collapse {
+      text-align: center;
     }
-}
+
+
+    .navbar .container{
+        display: inline-block;
+    }
+
+    .nav-button{
+        position: absolute;
+    }
+    .logo-image{
+
+        text-align: center;
+    }
+
+    .navbar-collapse.show{
+        background-color: #fff;
+    }
+
+    .nav-link{
+        color: black;
+        padding: 1rem;
+    }
+
+    .nav-link:hover{
+        background-color: rgb(243, 245, 246);
+        color: rgb(60, 99, 184);
+    }
+    .nav-item{
+        padding: 0;
+    }
+
+    .top-container{
+    background-position: center;
+    }
+
+
+  }
+
+  @media screen and (max-width: 390px) {
+    .content--heading{
+        right: 28%;
+        top: 50px;
+        font-size: 2.8rem;
+    }
+
+    .content-heading{
+        font-size: 3.5rem;
+    }
+  }
+
+
+  @media screen and (min-width: 500px) {
+    .content--heading{
+        right: 38%;
+    }
+  }
+  
+
+     @media screen and (min-width: 683px) {
+        .content--heading{
+            right: 40%;
+        }
+    }
+
+    @media screen and (min-width: 730px) {
+        .content--heading{
+            right: 42%;
+        }
+    }
+
+  
+    @media screen and (min-width: 991px) {
+      .content--heading{
+          right: 43%;
+        }
+    }
+
+    @media screen and (min-width: 1100px) {
+        .content--heading{
+            right: 44%;
+        }
+    }
+
+    @media screen and (min-width: 1200px) {
+        .content--heading{
+            right: 45%;
+        }
+    }
+
+
+    @media screen and (min-width: 1300px) {
+      .content--heading{
+          right: 45%;
+      }
+    }
+
+    @media screen and (max-height: 1000px) {
+        .content{
+            height: 480px;
+        }
+    }
