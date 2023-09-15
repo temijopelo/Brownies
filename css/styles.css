@@ -1,9 +1,7 @@
 @font-face {
     font-family: 'CustomFont';
-    src: url(/Fonts/lie-to-me-webfont.woff) format('woff');
-    src: url(/Fonts/lie-to-me-webfont.woff2) format('woff2');
-    src: url(/Fonts/lie-to-me-otf-webfont.woff) format('woff');
-    src: url(/Fonts/lie-to-me-otf-webfont.woff2) format('woff2');
+    src: url(Fonts/lie-to-me-otf-webfont.woff) format('woff');
+    src: url(Fonts/lie-to-me-webfont.woff2) format('woff2');
     font-weight: normal;
     font-style: normal;
 }
@@ -70,7 +68,7 @@ h3{
 }
 
 .content--heading{
-    font-family: 'CustomFont', sans-serif;
+    font-family: 'CustomFont';
     color: #fff;
     font-size: 4.8rem;
     font-weight: 300;
