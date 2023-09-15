@@ -1,12 +1,3 @@
-@font-face {
-    font-family: 'CustomFont';
-    src: url(Fonts/lie-to-me-otf-webfont.woff) format('woff');
-    src: url(Fonts/lie-to-me-webfont.woff2) format('woff2');
-    font-weight: normal;
-    font-style: normal;
-}
-
-
 
 html{
     font-size: 62.5%;
